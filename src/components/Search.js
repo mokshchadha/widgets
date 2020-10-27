@@ -18,7 +18,11 @@ const Search = ()=>{
             }})
             setResults(data.query.search)
         }
-        search()
+    const timeOutId = setTimeout(()=>{
+            if (term) search()
+        }, 500)
+
+        return ()=>clearTimeout(timeOutId)
     },[term])
 
     const renderResults = results.map(r=>{
