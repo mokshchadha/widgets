@@ -13,7 +13,7 @@ const Header = () => {
         Translate{" "}
       </a>
       <a href="/search" className="item">
-        Wiki
+        Wiki Search
       </a>
     </div>
   );
